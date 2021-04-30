@@ -51,5 +51,4 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Check display health status
-        run: curl http://bookinfo.uat.opsta.net/student51/ratings/health | grep "Ratings is working" 
-        run: echo $?
+        run: curl http://bookinfo.uat.opsta.net/student51/ratings/health | grep "Ratings is working" && echo $? 
